@@ -1,0 +1,19 @@
+.table-container{
+    display: flex;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.cell{
+    border: 1px solid black;
+    padding: 5px;
+    min-height: 20px;
+}
+
+h3{
+    padding: 5px;
+    color: red;
+}

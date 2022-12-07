@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>SQLite Display</title>
+</head>
+<body>
+    <div class="table-container">
+        <div class="column">
+            <h3>GEPID</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["GEPID"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>TELEPHELY</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["TELEPHELY"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>SZOBAMEGNEVEZES</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["SZOBAMEGNEVEZES"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>FOCSOPORT</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["FOCSOPORT"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>ALCSOPORT</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["ALCSOPORT"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>UZEMID</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["UZEMID"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>LELTARISZAM</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["LELTARISZAM"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>ESZKOZID</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["ESZKOZID"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>IPCIM</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["IPCIM"] }}</div>
+            {% endfor %}
+        </div>
+        
+        <div class="column">
+            <h3>HDDMERET</h3>
+            {% for row in data %}
+                <div class="cell">{{ row["HDDMERET"] }}</div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
